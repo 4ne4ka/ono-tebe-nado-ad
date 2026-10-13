@@ -12,7 +12,7 @@
 .header__links-list {
   display: flex;
   gap: 30px;
-  list-style: circle; 
+  list-style: circle;
   padding-left: 20px;
 }
 
@@ -88,7 +88,7 @@
   position: relative;
   z-index: 1;
   color: #fff;
-  font-family: 'Prata', serif; 
+  font-family: 'Raleway', sans-serif;
   font-size: 100px;
   line-height: 1.15;
   text-transform: uppercase;
@@ -154,7 +154,7 @@
 }
 
 .lots__heading {
-  font-family: 'Prata', serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 40px;
   text-transform: uppercase;
   margin-bottom: 27px;
@@ -162,8 +162,8 @@
 }
 
 .lots__card-list {
-  display: flex;
-  grid-template-columns: repeat(3, 1fr); 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 25px;
   list-style: none;
   padding: 0;
@@ -206,7 +206,7 @@
   position: relative;
   z-index: 1;
   color: #fff;
-  font-family: 'Prata', serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 22px;
   text-transform: uppercase;
   text-decoration: underline;
@@ -260,7 +260,7 @@
 }
 
 .about__title {
-  font-family: 'Prata', serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 40px;
   text-transform: uppercase;
   margin-bottom: 100px;

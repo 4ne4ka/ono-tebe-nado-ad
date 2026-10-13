@@ -1,17 +1,29 @@
+/* fonts.css */
 @font-face {
-  font-family: Raleway;
-  src:
-    url(./Raleway-Regular.woff2) format('woff2'),
-    url(./Raleway-Regular.woff) format('woff');
-  font-weight: normal;
+  font-family: 'Raleway';
+  src: url('./Raleway-Regular.woff2') format('woff2'),
+       url('./Raleway-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: Raleway;
-  src:
-    url(./Raleway-Bold.woff2) format('woff2'),
-    url(./Raleway-Bold.woff) format('woff');
-  font-weight: bold;
+  font-family: 'Raleway';
+  src: url('./Raleway-Bold.woff2') format('woff2'),
+       url('./Raleway-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Добавляем шрифт для заголовков, если он есть, или используем Serif */
+/* На макете заголовки выглядят как антиква (с засечками) */
+@font-face {
+  font-family: 'Prata';
+  src: url('./Prata-Regular.woff2') format('woff2'),
+       url('./Prata-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
   font-display: swap;
 }

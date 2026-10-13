@@ -1,8 +1,17 @@
+/* style.css */
+.header,
+.footer {
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: 0 auto;
+}
+
 .header {
+  height: 293px;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 30px 50px;
+  font-size: 18px;
 }
 
 .header__menu {
@@ -11,7 +20,7 @@
 
 .header__links-list {
   display: flex;
-  gap: 30px;
+  gap: 32px;
   list-style: circle;
   padding-left: 20px;
 }
@@ -38,7 +47,7 @@
 
 .header__logo {
   display: block;
-  width: 140px;
+  width: 148px;
 }
 
 .header__logo-image {
@@ -47,7 +56,9 @@
 
 .header__address {
   justify-self: end;
-  max-width: 240px;
+  width: 240px;
+  font-style: normal;
+  line-height: 1.35;
 }
 
 .address {
@@ -57,7 +68,7 @@
   font-style: normal;
   gap: 5px;
   font-size: 18px;
-  line-height: 1.2;
+  line-height: 1.35;
 }
 
 .address a {
@@ -67,11 +78,12 @@
 
 .cover {
   position: relative;
-  min-height: 757px;
+  height: 757px;
   background-image: url(../images/cover.jpg);
   background-size: cover;
   background-position: center;
   padding: 165px 50px 50px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -96,6 +108,7 @@
 }
 
 .aligned-text {
+  position: relative;
   display: block;
 }
 
@@ -104,10 +117,14 @@
 }
 
 .aligned-text_center {
+  top: 20px;
+  left: 15px;
   text-align: center;
 }
 
 .aligned-text_right {
+  top: 39px;
+  left: 30px;
   text-align: right;
 }
 
@@ -124,7 +141,8 @@
   z-index: 1;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
+  margin-top: 135px;
 }
 
 .cover__description-text {
@@ -135,6 +153,8 @@
 }
 
 .bet-button {
+  position: relative;
+  top: 10px;
   border: 1px solid #fff;
   background: transparent;
   color: #fff;
@@ -150,26 +170,29 @@
 }
 
 .lots {
-  padding: 180px 50px 0;
+  width: 1052px;
+  height: 723px;
+  margin: 180px auto 0 auto;
 }
 
 .lots__heading {
   font-family: 'Raleway', sans-serif;
   font-size: 40px;
   text-transform: uppercase;
-  margin-bottom: 27px;
-  padding-left: 40px;
+  margin: 0 0 27px 40px;
 }
 
 .lots__card-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   gap: 25px;
   list-style: none;
+  margin: 0 0 30px 0;
   padding: 0;
 }
 
 .lots__card-list-item {
+  height: 596px;
+  width: 334px;
   min-height: 596px;
 }
 
@@ -185,9 +208,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 48px 40px;
+  padding: 50px 40px;
   background-size: cover;
   background-position: center;
+  color: #fff;
 }
 
 .card_type_film {
@@ -222,7 +246,6 @@
 
 .lots__look-more-link {
   display: inline-block;
-  margin-top: 30px;
   margin-left: 40px;
   font-size: 20px;
   text-decoration: underline;
@@ -230,10 +253,12 @@
 }
 
 .about {
+  width: 1052px;
+  height: 595px;
+  margin: 120px auto 0 auto;
   display: grid;
   grid-template-columns: 334px 1fr;
   gap: 25px;
-  padding: 180px 50px 0;
 }
 
 .about__column {
@@ -242,7 +267,17 @@
 }
 
 .about__column:first-child {
-  align-items: center;
+  display: flex;
+  justify-items: center;
+  align-items: start;
+  margin-top: 35px;
+}
+
+.about__column:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  justify-self: left;
 }
 
 .about__logo {
@@ -253,10 +288,11 @@
   height: 240px;
   background-color: #000;
   border-radius: 50%;
+  margin: 0 auto;
 }
 
 .about__logo-image {
-  width: 140px;
+  width: 148px;
 }
 
 .about__title {
@@ -274,16 +310,26 @@
   line-height: 1.2;
 }
 
+.about__text p {
+  margin: 0 0 25px 0;
+}
+
+.about__text p:last-child {
+  margin-bottom: 0;
+}
+
 .footer {
+  height: 180px;
   display: grid;
-  grid-template-columns: 1fr min-content 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: start;
-  padding: 180px 50px 50px;
+  margin-top: 180px;
+  font-size: 18px;
 }
 
 .footer .address {
   align-items: flex-start;
-  max-width: 240px;
+  width: 240px;
 }
 
 .footer__menu {
@@ -291,7 +337,11 @@
 }
 
 .footer__menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   list-style: none;
+  margin: 0;
   padding: 0;
   text-align: center;
 }
@@ -314,6 +364,7 @@
   display: flex;
   gap: 48px;
   list-style: none;
+  margin: 0;
   padding: 0;
   justify-self: end;
 }
